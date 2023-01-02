@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	background-color:#fff5EE;
 }
+* {box-sizing: border-box}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Add padding to container elements */
+.container {
+  padding-bottom: 20px;
+    padding: 20px;
+      width:600px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+      border:2px solid red;
+      border-radius:10px;
+      background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
   }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type=phone] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #0eb7f4;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity:1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 637px) {
+  .signupbtn {
+     width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .container{
+    width: 80%;
+    
+  
+  
   }
 }
+@media screen and (max-width:414px) {
+  .container{
+    top: 50%;
+
+  }
+  h1{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:263px) {
+  h1{
+    font-size: 22px;
+  }
+}
+
+
